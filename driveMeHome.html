@@ -1,0 +1,357 @@
+	<!DOCTYPE HTML>
+	<html>
+	<head>
+	<title>My mobile app</title>
+	 <link rel="stylesheet" href="themes/myTheme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	</head>
+	<body>
+	<!-- ............................... -->
+	<!-- ............................... -->
+	<div data-role="page" id="page1" data-theme="d">
+		<div data-role="header">
+			<h1>driveMeHome</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<h1 align="middle">Hello Jhon!</h1>
+			
+			<form>
+			<button onclick="window.location='#page2'">Driver</button>
+			<button onclick="window.location='#page6'">Passenger</button>
+			
+			
+			</form>
+		
+		</div>
+		
+		<div data-role="footer">
+			<h2>&copy; driveMeHome</h2>
+		</div>
+		
+	</div>
+	<!-- ............................... -->
+	<!-- ............................... -->
+	<!-- driver-->
+	<!-- ............................... -->
+	<div data-role="page" id="page2" data-theme="d">
+		<div data-role="header">
+			<h1>driveMeHome</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<h1 align="middle">Hello Jhon!</h1>
+			
+			<form>
+			<button onclick="window.location='#page3'">Place a ride</button>
+			<button onclick="window.location='#page4'">View requests</button>
+			<button onclick="window.location='#page5'">My rides</button>
+			
+			</form>
+		
+		</div>
+		
+		<div data-role="footer">
+			<h2>&copy; driveMeHome</h2>
+		</div>
+		
+	</div>
+	<!-- ............................... -->
+	<div data-role="page" id="page3" data-theme="d">
+		<div data-role="header">
+			<h1>driveMeHome</h1>
+			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			
+			<a href="#page2">Home</a>
+			<h1 align="middle">Place a ride</h1>
+			<form>
+				From: <input type="text" name="from">
+				To: <input type="text" name="to">
+				Date: <input type="date" name="date"><br>
+				<input type="submit" value="Ok"  onclick="myFunction()" >
+				<script>
+					function myFunction() {
+					alert("You have placed your ride successfully!");
+					}
+				</script>
+				<button type="reset" value="Reset" onclick="window.location='#page1'">Cancel</button>
+			</form>
+		</div>
+		
+		<div data-role="footer">
+			<h2>&copy; driveMeHome</h2>
+		</div>
+		
+	</div>
+	<!-- ............................... -->
+	<div data-role="page" id="page4" data-theme="d">
+		<div data-role="header">
+			<h1>driveMeHome</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			
+			
+			<a href="#page2">Home</a>
+			<h1 align="middle">View requests</h1>
+		</div>
+		
+		<div data-role="footer">
+			<h2>&copy; driveMeHome</h2>
+		</div>
+		
+	</div>
+	<!-- ............................... -->
+	<div data-role="page" id="page5" data-theme="d">
+		<div data-role="header">
+			<h1 align="middle">driveMeHome</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			
+			
+			<a href="#page2">Home</a>
+			<h1 align="middle">My rides</h1>
+		</div>
+		
+		<div data-role="footer">
+			<h2>&copy; driveMeHome</h2>
+		</div>
+		
+	</div>
+	<!-- passenger -->
+	<!-- ............................... -->
+	<div data-role="page" id="page6" data-theme="d">
+		<div data-role="header">
+			<h1>driveMeHome</h1>
+		</div>
+		<a href="#page6">Home</a>
+		<div data-role="main" class="ui-content">
+			<h1 align="middle">Hello Jhon!</h1>
+			
+			<form>
+			<button onclick="window.location='#viewrides'">View Rides</button>
+			<button onclick="window.location='#sentrequest'">Sent Request</button>
+			<button onclick="window.location='#cancelrequest'">Cancel Request</button>
+			<button onclick="window.location='#page4'">My rides</button>
+			
+			</form>
+		
+		</div>
+		
+		<div data-role="footer">
+			<h2>&copy; driveMeHome</h2>
+		</div>
+		
+	</div>
+	<!-- ............................... -->
+	<div data-role="page" id="viewrides" data-theme="d">
+		<div data-role="header">
+			<h1>driveMeHome</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			
+			
+			<a href="#page6">Home</a>
+			<h1 align="middle">View Rides</h1>
+		</div>
+		<ul>
+			<div>
+				
+				<li> From: SLIIT </li>
+				<li> To: Baththaramulla </li>
+				<button onclick="window.location='#passenger1'">View more</button>
+				<p>......................................................... </p>
+			</div>	
+			<div>
+				
+				<li> From: SLIIT </li>
+				<li> To: Panadura </li>
+				<button onclick="window.location='#passenger2'">View more</button>
+				<p>.......................................................... </p>
+			</div>	
+			<div>
+				
+				<li> From: SLIIT </li>
+				<li> To: Colombo </li>
+				<button onclick="window.location='#passenger3'">View more</button>
+				<p>........................................................... </p>
+			</div>	
+		</ul>  
+
+		
+		<div data-role="footer">
+			<h2>&copy; driveMeHome</h2>
+		</div>
+		
+	</div>
+	<!-- ............................... -->
+	<div data-role="page" id="passenger1" data-theme="d">
+		<div data-role="header">
+			<h1 align="middle">driveMeHome</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			
+			
+			<li>Name : Gayesha suraweera</li>
+			<li>ID/Emp No : IT14152273</li>
+			<li>Gender :Female</li>
+			<li>From :SLIIT </li>
+			<li>To :Balummahara </li>
+			<li>Date :2017-12-27</li>
+			<li>Time :17:30 PM </li>
+		</div>
+		
+		<div data-role="footer">
+			<h2>&copy; driveMeHome</h2>
+		</div>
+		
+	</div>
+	<div data-role="page" id="passenger2" data-theme="d">
+		<div data-role="header">
+			<h1 align="middle">driveMeHome</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			
+		<li>Name : Pasan Rathsara</li>
+			<li>ID/Emp No : IT16273544</li>
+			<li>Gender :Male</li>
+			<li>From :SLIIT </li>
+			<li>To :Kandy </li>
+			<li>Date :2017-12-28</li>
+			<li>Time :13.30 PM </li>
+		</div>
+		
+		<div data-role="footer">
+			<h2>&copy; driveMeHome</h2>
+		</div>
+		
+	</div>
+	<div data-role="page" id="passenger3" data-theme="d">
+		<div data-role="header">
+			<h1 align="middle">driveMeHome</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			
+		<li>Name : Nipuni Dulanga</li>
+			<li>ID/Emp No : IT14263354</li>
+			<li>Gender :Femalee</li>
+			<li>From :SLIIT </li>
+			<li>To : Homagama </li>
+			<li>Date :2017-12-30</li>
+			<li>Time :17:15 PM </li>
+		</div>
+		
+		<div data-role="footer">
+			<h2>&copy; driveMeHome</h2>
+		</div>
+		
+	</div>
+<!-- ............................... -->
+<div data-role="page" id="sentrequest" data-theme="d">
+		<div data-role="header">
+			<h1>driveMeHome</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			
+			<a href="#page2">Home</a>
+			<h1 align="middle">Sent Request</h1>
+			<form>
+			<h2>I would like to join your ride..</h2>
+				Name:<input type="text" name="name">
+				ID/Emp:<input type="text" name="id">
+				Gender:<input type="text" name="gender">
+				From: <input type="text" name="from">
+				To: <input type="text" name="to">
+				On: <input type="date" name="date">
+				At:<input type="time" name="time">
+				<br>
+				
+				
+				<button type="reset" value="cancle" onclick="window.location='#page6'">Cancel</button>
+				<button type="reset" value="sentrequest" onclick="window.location='#requestsuccessMessage'">Sent Request</button>
+			</form>
+		</div>
+		
+		
+		
+	</div>
+<!-- ............................... -->
+<div data-role="page" id="requestsuccessMessage" data-theme="d">
+<div data-role="header">
+<h1 align="middle">driveMeHome</h1>
+</div>
+
+<div data-role="main" class="ui-content">
+
+<h3 align="middle">Your request has been successfully sent !</h3>
+<h3> Wait until the rider accepts your request.. </h3>
+<input type="submit" value="Ok" onclick="window.location='#page6'"">
+</div>
+<!-- ............................... -->
+<div data-role="page" id="cancelrequest" data-theme="d">
+		<div data-role="header">
+			<h1>driveMeHome</h1>
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			
+			<a href="#page2">Home</a>
+			<h1 align="middle">Cancel Request</h1>
+			<form>
+			<h2>I want to cancel my request..</h2>
+			
+			<li>Name : Nipuni Dulanga</li>
+			<li>ID/Emp No : IT14263354</li>
+			<li>Gender :Femalee</li>
+			<li>From :SLIIT </li>
+			<li>To : Homagama </li>
+			<li>Date :2017-12-30</li>
+			<li>Time :17:15 PM </li>
+				
+				
+				<button type="reset" value="cancle" onclick="window.location='#page6'">Cancel</button>
+				<button type="reset" value="cancelrequestMessage" onclick="window.location='#cancelrequestMessage'">Cancel Request</button>
+			</form>
+		</div>
+		
+		
+		
+	</div>
+<!-- ............................... -->
+<div data-role="page" id="cancelrequestMessage" data-theme="d">
+<div data-role="header">
+<h1 align="middle">driveMeHome</h1>
+</div>
+
+<div data-role="main" class="ui-content">
+
+<h3 align="middle">Your request has been canceled !</h3>
+<input type="submit" value="Ok" onclick="window.location='#page6'"">
+</div>
+<!-- ............................... -->
+
+
+
+
+
+
+
+
+
+
+
+	</body>
+	</html>
